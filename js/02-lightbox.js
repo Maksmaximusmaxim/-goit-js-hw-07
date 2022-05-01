@@ -15,8 +15,6 @@ const crEl = galleryItems.map(galleryItem =>
   
     const lightbox = new SimpleLightbox('.gallery a', { });
     console.log(lightbox)
- ul.addEventListener(`click`, ()=> {
-   
- })
+
   lightbox.options.captionsData =`alt`;
   lightbox.options.captionDelay =250

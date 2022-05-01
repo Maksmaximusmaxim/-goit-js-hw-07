@@ -32,12 +32,13 @@ if(!imgB){
   return
 }
 
-const val = e.target;
+// const val = e.target;
 
-let closImg = val.closest(`.gallery__image`);
-
-closImg = basicLightbox.create(`<img width="1280" height="800" scr="${e.target.dataset.source}"/>` ).show()
-console.log(closImg)
+// let closImg = val.closest(`.gallery__image`);
+const val= e.target.dataset.source;
+console.log(val);
+const closImg = basicLightbox.create(`<img  src="${val}"/>` );
+closImg.show()
 
 })
 
