@@ -30,12 +30,14 @@ e.preventDefault();
 const imgB = e.target.classList.contains(`gallery__image`)
 if(!imgB){
   return
-};
+}
 
 const val = e.target;
+
 let closImg = val.closest(`.gallery__image`);
 
-closImg = basicLightbox.create(`<img width="1280" height="800" scr="${closImg.dataset.source}"/>` ).show()
+closImg = basicLightbox.create(`<img width="1280" height="800" scr="${e.target.dataset.source}"/>` ).show()
+console.log(closImg)
 
 })
 
